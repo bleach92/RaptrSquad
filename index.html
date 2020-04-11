@@ -177,8 +177,7 @@
               })
               .on('dragReleaseEnd', function (item) {
                 
-                //socket.emit ('itemMove', item);
-                socket.emit('join', item);
+                socket.emit ('itemMove', item._id);
                 console.log(item);
                 
                   
