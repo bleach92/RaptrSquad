@@ -134,8 +134,8 @@
                 socket.emit('join', 'Hello World from client');
             });
             
-            socket.on('broad', function(data) {
-                $('#future').append(data+ "<br/>");
+            socket.on('itemMove', function(data) {
+                
             });
 
             $('form').submit(function(e){
