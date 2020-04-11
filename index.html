@@ -177,8 +177,9 @@
               })
               .on('dragReleaseEnd', function (item) {
                 console.log(grid.getItems().indexOf(item));
-                socket.emit ('itemMove', '');
-                console.log(item);
+                var stuff = [item._id, item.getGrid(), grid.getItems().indexOf(item)]; 
+                socket.emit ('itemMove', stuff);
+                console.log(stuff);
                 
                   
                   
@@ -223,6 +224,11 @@
             
             boardGrid.on('dragReleaseEnd', function (item) {
                 console.log(item);
+            });
+            
+            socket.on('broad', function(data) {
+                console.log(data);
+                grid.send(data[0],data[1],data[2]);
             });
         </script>
     </body>

@@ -16,8 +16,7 @@ io.on ('connection', function(client) {
         client.emit('messages', 'Hello from server');
     });
     
-    client.on('messages', function(data) {
-           client.emit('broad', data);
+    client.on('itemMove', function(data) {
            client.broadcast.emit('broad',data);
     });
     
