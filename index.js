@@ -21,8 +21,8 @@ io.on ('connection', function(client) {
            client.broadcast.emit('broad',data);
     });
     
-    client.on('itemMove', function(data) {
-           client.broadcast.emit('itemMove',data);
-    });
+    // client.on('itemMove', function(data) {
+    //        client.broadcast.emit('itemMove',data);
+    // });
 });
 server.listen(4200);

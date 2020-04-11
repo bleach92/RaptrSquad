@@ -135,7 +135,7 @@
             });
             
             socket.on('itemMove', function(data) {
-                
+                console.log(data);
             });
 
             $('form').submit(function(e){
@@ -177,7 +177,8 @@
               })
               .on('dragReleaseEnd', function (item) {
                 
-                socket.emit ('itemMove', item);
+                //socket.emit ('itemMove', item);
+                socket.emit('join', 'Hello World from 22222client');
                 console.log(item);
                 
                   
