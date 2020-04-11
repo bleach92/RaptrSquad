@@ -20,5 +20,9 @@ io.on ('connection', function(client) {
            client.emit('broad', data);
            client.broadcast.emit('broad',data);
     });
+    
+    client.on('itemMove', function(data) {
+           client.broadcast.emit('itemMove',data);
+    });
 });
 server.listen(4200);

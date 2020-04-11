@@ -176,6 +176,12 @@
                 item.getElement().style.height = item.getHeight() + 'px';
               })
               .on('dragReleaseEnd', function (item) {
+                
+                socket.emit ('itemMove', item);
+                console.log(item);
+                
+                  
+                  
                 // Let's remove the fixed width/height from the
                 // dragged item now that it is back in a grid
                 // column and can freely adjust to it's
@@ -213,6 +219,10 @@
               },
               dragReleaseDuration: 400,
               dragReleaseEasing: 'ease'
+            });
+            
+            boardGrid.on('dragReleaseEnd', function (item) {
+                console.log(item);
             });
         </script>
     </body>
