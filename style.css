@@ -1,13 +1,13 @@
 .board {
   position: relative;
-  margin-left: 1%;
+  margin-left:10%;
 }
 .board-column {
   position: absolute;
   left: 0;
   right: 0;
-  width: 30%;
-  margin: 0 1.5%;
+  width: 12.5%;
+  margin: 1% 1%;
   background: #f0f0f0;
   border-radius: 3px;
   z-index: 1;
@@ -52,7 +52,7 @@
 .board-item {
   position: absolute;
   width: 100%;
-  margin: 5px 0;
+  margin: 2px 0;
 }
 .board-item.muuri-item-releasing {
   z-index: 9998;
@@ -66,7 +66,7 @@
 }
 .board-item-content {
   position: relative;
-  padding: 20px;
+  padding: 10px;
   background: #fff;
   border-radius: 4px;
   font-size: 17px;
