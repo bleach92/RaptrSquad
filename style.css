@@ -24,6 +24,10 @@ body {
     color: red;
     outline-color: red;
 }
+
+#a {
+    color: orange;
+}
 .board-column.muuri-item-releasing {
   z-index: 2;
 }
