@@ -188,11 +188,6 @@
             boardGrid.on('dragReleaseEnd', function (item) {
                 console.log(item);
             });
-            
-            socket.on('broad', function(data) {
-                console.log(data);
-                grid.send(data[0],data[1],data[2]);
-            });
         </script>
     </body>
 </html>
