@@ -63,6 +63,7 @@ body {
   position: absolute;
   width: 100%;
   margin: 2px 0;
+  font-size: 4%
 }
 .board-item.muuri-item-releasing {
   z-index: 9998;
