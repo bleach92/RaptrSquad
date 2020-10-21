@@ -17,10 +17,12 @@ body {
   z-index: 1;
 }
 .O {
-   color: aqua; 
+   color: aqua;
+   outline-color: aqua
 }
 .n {
     color: red;
+    outline-color: red;
 }
 .board-column.muuri-item-releasing {
   z-index: 2;
