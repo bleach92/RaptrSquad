@@ -1,3 +1,7 @@
+body {
+    height: 100vh;
+}
+
 .board {
   position: relative;
   margin-left:10%;
@@ -6,7 +10,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  width: 12.5%;
+  width: 11%;
   margin: 1% 1%;
   background: #f0f0f0;
   border-radius: 3px;
