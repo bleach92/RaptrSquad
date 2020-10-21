@@ -16,11 +16,11 @@ body {
   border-radius: 3px;
   z-index: 1;
 }
-.O {
+#O {
    color: aqua;
-   outline-color: aqua
+   outline-color: aqua;
 }
-.n {
+#n {
     color: red;
     outline-color: red;
 }
