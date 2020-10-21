@@ -115,24 +115,8 @@
       <div class="board-item"><div class="board-item-content"><span>Item #</span>15</div></div>
     </div>
   </div>
+</div>
         <script src="/jquery/dist/jquery.js"></script>
-        <script src="/socket.io/socket.io.js"></script>
-        <script>
-            var socket = io.connect('http://localhost:4200');
-            socket.on('connect', function(data) {
-                socket.emit('join', 'Hello World from client');
-            });
-            
-            socket.on('itemMove', function(data) {
-                console.log(data);
-            });
-
-            $('form').submit(function(e){
-                e.preventDefault();
-                var message = $('#chat_input').val();
-                socket.emit('messages', message);
-            });
-        </script>
         <script>
             var itemContainers = [].slice.call(document.querySelectorAll('.board-column-content'));
             var columnGrids = [];
